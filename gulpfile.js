@@ -74,6 +74,10 @@ gulp.task('build', ['html', 'sass'], function() {
     './dev/assets/scripts/*.js',
     ]).pipe(gulp.dest('./rel/assets/scripts'));
 
+  var buildImg = gulp.src([
+    './dev/assets/img/**',
+  ]).pipe(gulp.dest('./rel/assets/img'));
+    
   var buildFonts = gulp.src([
     './dev/assets/fonts/**',
     ]).pipe(gulp.dest('./rel/assets/fonts'));
